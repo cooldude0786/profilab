@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/profilab.css">
+    <script src="https://kit.fontawesome.com/c153436894.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Montserrat:wght@100;300&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wdth,wght@99.1,336&family=Oswald:wght@200;500&family=Poppins:wght@300&family=Roboto+Condensed:wght@300&family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+	<title>Profilab</title>
+</head>
+<body>
+	<div class="d-flex justify-content-around align-items-center p-3 title col-12">
+		<div class="d-flex col-md-3 LOGO">
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+			<div class="logo-title">
+					<h5 class="m-0">PROFILAB</h5>
+					<p class="m-0">MARKETING AGENCY</p>
+			</div>
+		</div>
+			<div class="nav d-inline-flex justify-content-end p-2 col-md-9 nav_bar">
+				<a class="nav-link active1" href="">HOME</a>
+				<a class="nav-link" href="">SERVICES</a>
+				<a class="nav-link" href="">ABOUT US</a>
+				<a class="nav-link" href="">OUR TEAM</a>
+				<a class="nav-link" href="">TESTIMONIALS</a>
+				<a class="nav-link" href="">PRICING</a>
+				<a class="nav-link" href="">BLOG</a>
+				<a class="nav-link" href="">CONTACT US</a>
+		</div>
+	</div>
+<!-- 
+      <div class="d-flex py-4 justify-content-center align-items-center imgtxt im1">
+		DEDICATE TO RESULTS
+	</div>
+     <div class="d-flex py-4 justify-content-center align-items-center imgtxt im2">
+     	See The Good
+	</div>
+      <div class="d-flex py-4 justify-content-center align-items-center imgtxt im3">
+		Stay Hungry
+	</div> -->
+	<div class="row col-md-12 p-0 m-0 position-relative ih">
+		<div class="arrow-left" id="arrow-left" onclick="previous()"><i class="fa-solid fa-angle-left"></i></div>
+		<div class="ih py-4 px-0 col-md-12 justify-content-center align-items-center imgtxt im1" id="imgtxt1">
+		DEDICATE TO RESULTS
+	</div>
+	<div class="ih py-4 px-0 col-md-12 justify-content-center align-items-center imgtxt im2" id="imgtxt2">
+		See The Good
+	</div>
+	<div class="ih py-4 px-0 col-md-12 justify-content-center align-items-center imgtxt im3" id="imgtxt3">
+		Stay Hungry
+	</div> 
+	<div class="arrow-rigth" id="arrow-rigth" onclick="next()" ><i class="fa-solid fa-angle-right"></i></div>
+	<div class="slide_dot">
+  <span class="dot activedot" id="dot1" onclick="currentSlide(0,'dot1')">01</span>
+  <span class="dot" id="dot2" onclick="currentSlide(1,'dot2')">02</span>
+  <span class="dot" id="dot3" onclick="currentSlide(2,'dot3')">03</span>
+</div>
+	</div>
+<!-- <i class="fa-solid fa-angle-right"></i> -->
+
+
+
+
+
+
+
+
+
+
+
+	<div class="d-flex justify-content-center py-3 our-service">
+		Our Services
+	</div>
+	<div class="d-flex justify-content-center pb-3">
+		<div class="d-flex w-75 our-service-desc">
+				We provides a variety of marketing and promotion services to enable you and your bussiness
+				with innovative and strategies and attract more customers.
+		</div>
+	</div>
+	<div class="d-flex flex-wrap px-5 pb-3 justify-content-center feature">
+		<div class="d-block p-4 col-md-3 border border-secondary border-right-0 border-bottom-0">
+			<div class="py2 px-1 flogo1"><img src="img/branding.jpg"></div>
+			<div class="p-1 ftitle">Branding</div>
+			<div class="p-1 fdesc">
+				Whether you're looking to launch a brand or you just need help clarifying your message, we can help you.
+			</div>
+		</div>
+		<div class="d-block p-4 col-md-3 border border-secondary border-right-0 border-bottom-0">
+			<div class="py2 px-1 flogo2"><img src="img/strategy.jpg"></div>
+			<div class="p-1 ftitle">Strategy</div>
+			<div class="p-1 fdesc">
+				Our experts can help you develop your marketing strategy and integrate it into your advertising campaign.
+			</div>
+		</div>
+		<div class="d-block p-4 col-md-3 border border-secondary border-right-0 border-bottom-0">
+			<div class="py2 px-1 flogo3"><img src="img/video_production.jpg"></div>
+			<div class="p-1 ftitle">Video Production</div>
+			<div class="p-1 fdesc">
+				Need a professional advertising video for your campaign? We can offer anything you need.
+			</div>
+		</div>
+		<div class="d-block p-4 col-md-3 border border-secondary border-bottom-0">
+			<div class="py2 px-1 flogo4"><img src="img/copywriting.jpg"></div>
+			<div class="p-1 ftitle">Copywriting</div>
+			<div class="p-1 fdesc">
+				Our experienced copywriters will gladly provide you with high-quality texts for your websites or advertiswements.
+			</div>
+		</div>
+		<div class="d-block p-4 col-md-3 border border-secondary border-right-0">
+			<div class="py2 px-1 flogo5"><img src="img/smm.jpg"></div>
+			<div class="p-1 ftitle">SMM</div>
+			<div class="p-1 fdesc">
+				We can develop a simple social media marketing plan designed specifically for your business and your needs.
+			</div>
+		</div>
+		<div class="d-block p-4 col-md-3 border border-secondary border-right-0">
+			<div class="py2 px-1 flogo6"><img src="img/outdooradvertising.jpg"></div>
+			<div class="p-1 ftitle">Outdoor Advertising
+</div>
+			<div class="p-1 fdesc">
+				If you need to create yournext out-of-home campaign or lease your spaces, we can satisfy your advertising needs.
+			</div>
+		</div>
+		<div class="d-block p-4 col-md-3 border border-secondary border-right-0">
+			<div class="py2 px-1 flogo7"><img src="img/graphic.jpg"></div>
+			<div class="p-1 ftitle">Graphic Design
+</div>
+			<div class="p-1 fdesc">
+				Our graphic design services include printing brochures, banners and logo for your advertising campaign
+			</div>
+		</div>
+		<div class="d-block p-4 col-md-3 border border-secondary">
+			<div class="py2 px-1 flogo8"><img src="img/marketing.jpg"></div>
+			<div class="p-1 ftitle">Marketing</div>
+			<div class="p-1 fdesc">
+				This service includes a variety of promotional techniques and methods that can boost your company's products
+			</div>
+		</div>
+	</div>
+	<div class="d-flex p-md-3 col-md-12 about_us_ ">
+		<div class="p-md-2 px-md-5 col-md-6 about_title">
+			<h3>A Few Words About US</h3>
+			<p>
+				We are a team of talented marketers who happen to love creating of talented marketers who happen to love creating smart ideas for those who will have us. We use our creqative potential to provide the smartest ideas.
+			</p>
+			<p>
+				We have a wide range of experience, expertise and tools to create and implement your campaigns, from carefully curating awesome content to optimising it with our great SEO powers as well as outdoor marketing akills
+			</p>
+			<p>
+			<a href="#" class="btn btn-success btn-lg w-50 about_us_btn" role="button" aria-pressed="true">LEARN MORE</a>
+			</p>
+		</div>
+		<div class="col-md-6">
+			<img src="img/about_us.jpg" class="p-2">
+		</div>
+	</div>
+	<div class="d-flex justify-content-center align-items-center p-3 py-5 compaign">
+		<div>
+			Learn the Cost of your <label class="font-weight-bolder">Marketing Campaign Rigth Now!</label>
+		</div>
+		<div class="px-3">
+			<a href="#" class="btn btn-success btn-lg px-4 w-100 compaign-btn" role="button" aria-pressed="true">LEARN MORE</a>
+		</div>
+	</div>
+	<div class="d-flex p-4 justify-content-md-center who_are_we">
+		Who We Are
+	</div>
+	<div class="d-flex flex-wrap justify-content-md-around pb-3">
+		<img src="img/model1.jpg">
+		<img src="img/model2.jpg">
+		<img src="img/model3.jpg">
+	</div>
+	<div class="d-flex justify-content-md-center pb-4">
+		<button type="button" class="btn btn-success btn-lg">VIEW ALL TEAM</button>
+	</div>
+	<div class="d-flex flex-column align-items-center testimonial">
+		<div class="p-4">Testimoials</div>
+		<div class="d-flex justify-content-around col-md-12">
+			<div class="col-md-6 px-5">
+				<p>
+					<img src="img/icon1.jpg">
+				</p>
+				<p>
+					Profilab is, hand down, one of the best companies that we have worked with! The company has either met or exceeded all of the goals that we initially set for all of the projects that we set for all of the peoject that they implemented forus. I am sure that our company will partner with them again in the furture.
+				</p>
+				<div class="d-flex">
+					<img src="img/ceo.jpg" class="col-2 rounded-circle">
+					<div class="col-7 pl-0">
+						<h5>Mark Zuckerberg</h5>
+						<p id="ceo">Chief Executive Officer of Facebook</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6"><img src="img/video_tag1.jpg"></div>
+		</div>		
+	</div>
+	<div class="d-flex align-items-center flex-column p-4 pricing">
+		<h3>Pricing</h3>
+		<p class="w-75 p-2">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+		</p>
+	</div>
+	<div class="d-flex flex-wrap outter_pricing_category col-12">
+		<div class="d-flex flex-wrap pricing_category col-12">
+			<div class="pri_cate_1 col-md-3">
+				<div class="pri_cate_font1">
+					<img src="img/fontstar.jpg" class="pri_cate_img">
+				</div>
+				<div class="pri_cate_tiitle1">
+					<b>Small Business</b>
+				</div>
+				<div class="pri_cate_desc1">
+					<div class="pri_cate_desc1_1">
+						<span>60</span> 
+						 <span class="pri_cate_desc1_2_1">
+						 Campaign Hours</span></div>
+					<div class="pri_cate_desc1_1">
+						<span class="pricedesc1_amount2">1</span>  
+						<span class="pri_cate_desc1_2_2">
+						  Month</span></div>
+					<div class="pri_cate_desc1_1">
+						<span class="pricedesc1_month3">10</span> 
+						 <span class="pri_cate_desc1_2_3">
+						 Additional Services</span></div>
+					
+				</div>
+				<div class="pri_cate_amm">
+					<sup>$</sup>789.00
+				</div>
+				<div class="pri_cate_btm">
+					<button class="pri_cate_btm1">OEDER SRVICE</button>
+				</div>
+			</div>
+			<div class="pri_cate_1 col-md-3">
+				<div class="pri_cate_font1">
+					<img src="img/fontstar.jpg" class="pri_cate_img">
+					<img src="img/fontstar.jpg" class="pri_cate_img">
+				</div>
+				<div class="pri_cate_tiitle2">
+					<b>Medium Business</b>
+				</div>
+				<div class="pri_cate_desc1">
+					<div class="pri_cate_desc1_1">
+						<span class="pricedesc2_amount1">5</span> 
+						 <span class="pri_cate_desc2_2_1">
+						 Campaign Hours</span></div>
+					<div class="pri_cate_desc1_1">
+						<span class="pricedesc2_amount2">2</span>  
+						<span class="pri_cate_desc2_2_2">
+						  Month</span></div>
+					<div class="pri_cate_desc1_1">
+						<span>20</span> 
+						 <span class="pri_cate_desc2_2_3">
+						 Additional Services</span></div>
+					
+				</div>
+				<div class="pri_cate_amm">
+					<sup>$</sup>1299.00
+				</div>
+				<div class="pri_cate_btm">
+					<button class="pri_cate_btm1">OEDER SRVICE</button>
+				</div>
+			</div>
+			<div class="pri_cate_1 col-md-3">
+				<div class="pri_cate_font1">
+					<img src="img/fontstar.jpg" class="pri_cate_img">
+					<img src="img/fontstar.jpg" class="pri_cate_img">
+					<img src="img/fontstar.jpg" class="pri_cate_img">
+				</div>
+				<div class="pri_cate_tiitle1">
+					<b>Big Business</b>
+				</div>
+				<div class="pri_cate_desc1">
+					<div class="pri_cate_desc1_1">
+						<span>10</span> 
+						 <span class="pri_cate_desc3_2_1">
+						 Campaign Hours</span></div>
+					<div class="pri_cate_desc1_1">
+						<span class="pricedesc3_amount2">3</span>  
+						<span class="pri_cate_desc3_2_2">
+						  Month</span></div>
+					<div class="pri_cate_desc1_1">
+						<span>40</span> 
+						 <span class="pri_cate_desc3_2_3">
+						 Additional Services</span></div>
+					
+				</div>
+				<div class="pri_cate_amm">
+					<sup>$</sup>2369.00
+				</div>
+				<div class="pri_cate_btm">
+					<button class="pri_cate_btm1">OEDER SRVICE</button>
+				</div>
+			</div>
+			<div class="pri_cate_1 col-md-3">
+				<div class="pri_cate_font1">
+					<img src="img/fontstar.jpg" class="pri_cate_img">
+					<img src="img/fontstar.jpg" class="pri_cate_img">
+					<img src="img/fontstar.jpg" class="pri_cate_img">
+					<img src="img/fontstar.jpg" class="pri_cate_img">
+				</div>
+				<div class="pri_cate_tiitle1">
+					<b>Corporation</b>
+				</div>
+				<div class="pri_cate_desc1">
+					<div class="pri_cate_desc1_1">
+						<span>20+</span> 
+						 <span class="pri_cate_desc4_2_1">
+						 Campaign Hours</span></div>
+					<div class="pri_cate_desc1_1">
+						<span class="pricedesc4_amount2">4</span>  
+						<span class="pri_cate_desc4_2_2">
+						  Month</span></div>
+					<div class="pri_cate_desc1_1">
+						<span>60+</span> 
+						 <span class="pri_cate_desc4_2_3">
+						 Additional Services</span></div>
+					
+				</div>
+				<div class="pri_cate_amm">
+					<sup>$</sup>6790.00
+				</div>
+				<div class="pri_cate_btm">
+					<button class="pri_cate_btm1">OEDER SRVICE</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="d-flex justify-content-center align-items-center p-3 py-4 compaign col-md-12">
+		<div>
+			We Offer Quality <label class="font-weight-bolder">Branding and Promotion</label> Rigth Now!
+		</div>
+		<div class="px-3">
+			<a href="#" class="btn btn-success btn-lg px-4 w-100 compaign-btn" role="button" aria-pressed="true">FREE CONSULTATION</a>
+		</div>
+	</div>
+	<div class="py-2 blog">
+		Latest Blog Posts
+	</div>
+	<div class="d-flex col-md-12 justify-content-between blogimg_">
+		<div class="d-flex flex-column col-md-6 px-0">
+			<img src="img/blogimg1.jpg">
+				<div class="col row">
+					<div class="blog_title p-2">
+						10 Digital Marketing Mistake to Avoid
+					</div>
+				</div>	
+				<div class="col row">
+					<div class="d-flex p-2 blog-subtitle col-md-12">
+						<div class="bolg_sub_1">by Theresa Barnes</div>
+							<div class="bolg_sub_2">Apr 29, 2019 at 12:05 pm</div>
+							<div class="bolg_sub_3 pl-1">News</div>
+					</div>
+				</div>	
+			<div class="p-3 blogdec">
+				Though managing your digital marketing campaign may seem easy. you can encounter some complexities. Which usually lead to mistakes and a bad promtion effect.
+			</div>
+		</div>
+		<div class="d-flex flex-column col-md-6 px-0">
+			<img src="img/blogimg2.jpg">
+			<div class="col row">
+				<div class="blog_title p-2">
+					Where Marketers Need to Succeed this Season
+				</div>
+			</div>	
+			<div class="col row">
+				<div class="d-flex p-2 blog-subtitle col-md-12">
+					<div class="bolg_sub_1">by Theresa Barnes</div>
+						<div class="bolg_sub_2">Apr 29, 2019 at 12:05 pm</div>
+						<div class="bolg_sub_3 pl-1">News</div>
+				</div>
+			</div>
+					<div class="p-3 blogdec">
+						Being a suucesful marketer today might appear to require a never-ending list of skills. Where do you need to excel -- content creation, social media, web analytics, or all of the above?
+				</div>
+		</div>
+	</div>
+	<div class="row col-md-12 justify-content-center p-md-2">
+		<button type="button" class="btn btn-outline-success px-md-4 blog_post">VIEW ALL BLOG POST</button>
+	</div>
+	<div class="row col-md-12 py-2 mx-0 px-0 form_">
+		<div class="col-md-6">
+			<form name="MyForm" method="POST" action="#" onsubmit="return validateform()" class="p-3">
+				<div class="form-row col-md-12 p-4">
+					<h3>Contact Us</h3>
+				</div>
+				<div class="form-row col-md-12 m-0 px-0">
+					<div class="form-group col-md-6 pr-2 m-0">
+						<label for="firstname">First Name</label>
+      					<input type="text" name="first_name" class="form-control pb-0" id="firstname"  onfocusout="outfocusforfirstname(this)"
+      					 >
+      					<label id="form_error_first_name" class="row pl-md-3 col-md-12 text-danger font-weight-bold m-0 d-none">*Enter Fist Name</label>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="lastname">Last Name</label>
+      					<input type="text" name="last_name" class="form-control pb-0" id="lastname"
+      					onfocusout="outfocusforlastname(this)">
+      					<label id="form_error_last_name" class="row pl-md-3 col-md-12 text-danger font-weight-bold m-0 d-none">*Enter Last Name</label>
+					</div>
+				</div>
+				<div class="form-row col-md-12 m-0 px-0">
+					<div class="form-group col-md-6 pr-2 m-0">
+						<label for="emailinput">Email</label>
+      					<input type="email" name="email_input" class="form-control pb-0" id="emailinput" onfocusout="outfocusforemail(this)">
+      					<label id="form_error_email" class="row pl-md-3 col-md-12 text-danger font-weight-bold m-0 d-none">*Enter Email ID</label>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="phonenumber">Phone</label>
+      					<input type="number" name="phone_number" class="form-control pb-0" id="phonenumber" onfocusout="outfocusforphonenumber(this)">
+      					<label id="form_error_phone" class="row pl-md-3 col-md-12 text-danger font-weight-bold m-0 d-none">*Enter Phone Number</label>
+					</div>
+				</div>
+				<div class="form-row col-md-12 m-0 px-0">
+					<div class="form-group col-md-12">
+						<label for="messageinput">Message</label>
+						<textarea class = "form-control" id="messageinput" name="message_input" rows = "3" onfocusout="outfocusformessage(this)"></textarea>
+						<label id="form_error_message" class="row pl-md-3 col-md-12 text-danger font-weight-bold m-0 d-none">*Enter Message</label>
+					</div>
+				</div>
+				<div class="form-row col-md-11 align-items-center">
+				  <button type="submit" class="btn btn-success px-3 mx-1">Send Message</button>
+				  <label class="px-1 mx-1 ">or use</label>
+				  <button type="button" class="btn btn-outline-success px-2 mx-1 blog_post">
+				  <i class="fa-brands fa-facebook-messenger">Messanger</i></button>
+				  
+				</div>
+			</form>
+		</div>
+		<div class="col-md-6">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.0527182540364!2d72.83527578008027!3d19.18598989387383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6ee6a79479d%3A0x1c60f5d9788f6ee0!2sD%20Mart%20Malad!5e0!3m2!1sen!2sin!4v1646719046096!5m2!1sen!2sin" class="col-md-12 h-100"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+	</div>
+	<div class="flex-wrap row col-md-12 p-0 m-0 footer_img">
+		<img src="img/pic1.jpg" class="col-md-2 px-0">
+		<img src="img/pic2.jpg" class="col-md-2 px-0">
+		<img src="img/pic3.jpg" class="col-md-2 px-0">
+		<img src="img/pic4.jpg" class="col-md-2 px-0">
+		<img src="img/pic5.jpg" class="col-md-2 px-0">
+		<img src="img/pic6.jpg" class="col-md-2 px-0">
+	</div>
+	<footer class="p-2 bg-dark footer_">
+		<div class="row col-md-12">
+			<div class="col-md-8 px-md-5">
+				<div class="row col-md-12 link_">
+					<h2>Ouick Link</h2>
+				</div>
+				<div class="row col-md-12">
+					<ul class="col-md-3 footer_ul">
+						<li><a href>Services</a></li>
+						<li><a href>Single Service</a></li>
+						<li><a href>Contact</a></li>
+						<li><a href>Testimonials</a></li>
+							<li><a href>Privacy Policy</a></li>
+					</ul>
+					<ul class="col-md-3 footer_ul">
+						<li><a href>Blog</a></li>
+						<li><a href>About Us</a></li>
+						<li><a href>Team Manager Page</a></li>
+						<li><a href>Login</a></li>
+							<li><a href>Registration</a></li>
+					</ul>
+					<ul class="col-md-3 footer_ul">
+						<li><a href>Career</a></li>
+						<li><a href>Portfolio</a></li>
+						<li><a href>Single Project</a></li>
+						<li><a href>Our History</a></li>
+							<li><a href>Single job</a></li>
+					</ul>
+					<ul class="col-md-3 footer_ul">
+						<li><a href>Facebook</a></li>
+						<li><a href>Twitter </a></li>
+						<li><a href>Instagram</a></li>
+						<li><a href>Linkedin</a></li>
+							<li><a href>Pinterest</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 footer_2">
+				<div class="link_">
+					<h2>Contact Information</h2>
+				</div>
+				<div class="row col-sm-12 pb-1">
+					<div class="col-sm-2"><a href=""><i class="fa-solid fa-location-dot"></i></a></div>
+					<div class="col-sm-10">
+						 2130 Fulton Street San Diego, CA 
+							94117-1080 USA
+					</div>
+				</div>
+				<div class="row col-sm-12 pb-1">
+					<div class="col-sm-2"><a href=""><i class="fa-solid fa-phone"></i></a></div>
+					<div class="col-sm-10">
+						1-800-1234-678<br>
+						1-800-8765-098
+					</div>
+				</div>
+				<div class="row col-sm-12 pb-1">
+					<div class="col-sm-2"><a href=""><i class="fa-solid fa-envelope"></i></a></div>
+					<div class="col-sm-10">
+						info@demolink.org
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+<!-- i=0 -->
+<!-- img_id[i] -->
+
+
+	<script type="text/javascript">
+		const img_id = ["imgtxt1","imgtxt2","imgtxt3"];
+		var dot_id = ["dot1","dot2","dot3"];
+		var opacity = 0;
+		var counter = 0;
+		var i;
+		function next(){
+			if (counter ==3) {
+				counter = 0;
+			}
+			for(i=0;i<3;i++){
+				if( i == counter){
+					document.getElementById(img_id[i]).style.opacity = "1";
+					document.getElementById(img_id[i]).style.zIndex =1;
+					document.getElementById(dot_id[i]).classList.add("activedot");
+				}else{
+					document.getElementById(img_id[i]).style.opacity = "0";
+					document.getElementById(img_id[i]).style.zIndex =0;
+			// 		document.getElementById(img_id[i]).style.display ="none";
+					document.getElementById(dot_id[i]).classList.remove("activedot");
+				}
+			}
+			// counter ++;
+		}
+		function previous(){
+			// if (counter == -1) {
+			// 	counter = 2;
+			// }
+			// for(i=0;i<3;i++){
+			// 	if( i == counter){
+			// 	document.getElementById(img_id[i]).style.display ="flex";
+			// 	document.getElementById(dot_id[i]).classList.add("activedot");
+			// 	}else{
+			// 		document.getElementById(img_id[i]).style.display ="none";
+			// 		document.getElementById(dot_id[i]).classList.remove("activedot");
+			// 	}
+			// }
+			// counter --;
+		}
+		function currentSlide(n,id_name){
+
+			// for(i=0;i<3;i++){
+			// 	if (i==n) {
+			// 	document.getElementById(img_id[i]).style.display ="flex";
+			// 	document.getElementById(dot_id[i]).classList.add("activedot");
+			// 	}else{
+			// 		document.getElementById(img_id[i]).style.display ="none";
+			// 		document.getElementById(dot_id[i]).classList.remove("activedot");
+			// 	}
+			// }
+		}
+		function validateform(){
+			// var errfname=errlname=errphone=erremail=errmessage="";
+			// const error_txt =[];
+			// var first_name=document.MyForm.first_name.value;
+			// var last_name=document.MyForm.last_name.value;
+			// var email_input=document.MyForm.email_input.value;
+			// var phone_number=document.MyForm.phone_number.value;
+			// var message_input=document.MyForm.message_input.value;
+			// if (first_name==""|| first_name==null) {
+			// 	document.getElementById("firstname").classList.add("border-danger");
+			// 	document.getElementById('form_error_first_name').classList.remove("d-none");
+			// 	error_txt.push("Enter First Name");
+			// }
+
+			// else{
+			// 	document.getElementById("firstname").classList.remove("border-danger");
+			// 	document.getElementById('form_error_first_name').classList.add("d-none");
+			// }
+			// if (last_name==""|| last_name==null) {
+			// 	document.getElementById("lastname").classList.add("border-danger");
+			// 	document.getElementById('form_error_last_name').classList.remove("d-none");
+			// 	error_txt.push("Enter Last Name");
+			// }
+
+			// else{
+			// 	document.getElementById("lastname").classList.remove("border-danger");
+			// 	document.getElementById('form_error_last_name').classList.add("d-none");
+			// }
+			// if (email_input==""|| email_input==null|| !email_input.search("/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/")) {
+			// 	document.getElementById("emailinput").classList.add("border-danger");
+			// 	document.getElementById('form_error_email').classList.remove("d-none");
+			// 	error_txt.push("Enter  email");
+			// }
+
+			// else{
+			// 	document.getElementById("emailinput").classList.remove("border-danger");
+			// 	document.getElementById('form_error_email').classList.add("d-none");
+
+			// }
+			// if (phone_number==""|| phone_number==null || phone_number.length!=10) 
+			// {
+			// 	document.getElementById("phonenumber").classList.add("border-danger");
+			// 	document.getElementById('form_error_phone').classList.remove("d-none");				error_txt.push("Enter Phone number");	
+			// }
+			// else{
+			// 	document.getElementById("phonenumber").classList.remove("border-danger");
+			// 	document.getElementById('form_error_phone').classList.add("d-none");
+			// }
+			// if(message_input==""|| message_input==null){
+			// 	document.getElementById("messageinput").classList.add("border-danger");
+			// 	document.getElementById('form_error_message').classList.remove("d-none");
+			// 	error_txt.push("Enter the Message");
+			// }
+			// else{
+			// 	document.getElementById("messageinput").classList.remove("border-danger");
+			// 	document.getElementById('form_error_message').classList.add("d-none");
+			// }
+			// if (error_txt.length!=0) {
+				
+			// 	return false;
+			// }
+			// else {
+			// 	document.getElementById("form_error_last_name").innerHTML ="";
+			// 	document.getElementById("form_error_email").innerHTML ="";
+			// 	document.getElementById("form_error_phone").innerHTML ="";
+			// 	document.getElementById("form_error_message").innerHTML ="";
+			// 					return false;
+			// }
+		}
+		function outfocusforfirstname(x){
+			var firstname =document.getElementById('firstname');
+			if(firstname.value !=""){
+			x.classList.remove("border-danger");
+			document.getElementById('form_error_first_name').classList.add("d-none");
+			}else{
+				x.classList.add("border-danger");
+			document.getElementById('form_error_first_name').classList.remove("d-none");
+			}
+		}
+		function outfocusforlastname(x){
+			var lastname =document.getElementById('lastname');
+			if(lastname.value !=""){
+			x.classList.remove("border-danger");
+			document.getElementById('form_error_last_name').classList.add("d-none");
+			}else{
+				x.classList.add("border-danger");
+			document.getElementById('form_error_last_name').classList.remove("d-none");
+			}
+		}
+		function outfocusforemail(x){
+
+
+			var emailinput =document.getElementById('emailinput');
+			if( /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/.test(emailinput.value)){
+			x.classList.remove("border-danger");
+			document.getElementById('form_error_email').classList.add("d-none");
+			}else{
+				x.classList.add("border-danger");
+			document.getElementById('form_error_email').classList.remove("d-none");
+			}
+		}
+		function outfocusforphonenumber(x){
+			var phonenumber =document.getElementById('phonenumber');
+			if(phonenumber.value !=""){
+			x.classList.remove("border-danger");
+			document.getElementById('form_error_phone').classList.add("d-none");
+			}else{
+				x.classList.add("border-danger");
+			document.getElementById('form_error_phone').classList.remove("d-none");
+			}
+		}
+		function outfocusformessage(x){
+			var messageinput =document.getElementById('messageinput');
+			if(messageinput.value !=""){
+			x.classList.remove("border-danger");
+			document.getElementById('form_error_message').classList.add("d-none");
+			}else{
+				x.classList.add("border-danger");
+			document.getElementById('form_error_message').classList.remove("d-none");
+			}
+		}
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
