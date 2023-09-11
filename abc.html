@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+<style>
+.out{
+    display: inline-flex;
+    width: 80%;
+    height: 50px;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-left: 10%;
+    background-color: antiquewhite;
+    flex-direction: column-reverse;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.out div{
+    width: 100%;
+    min-height: 20px;
+    background-color: black;
+    padding: 0 2px;
+} 
+.out .move{
+    color: black;
+    text-align: center;
+    background-color: transparent !important;
+}
+.out .circle{
+    position: relative;
+}
+.out .circle .inci{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: transform 0.7s ease;
+}
+.out .move:hover ~ .circle .inci{
+    transform: translateX(78vw);
+}
+</style>
+</head>
+
+<body>
+    <div class="out">
+        <div class="move">hover-Us</div>
+
+        <div class="circle">
+            <div class="inci"></div>
+        </div>
+    </div>
+</body>
+
+</html>
